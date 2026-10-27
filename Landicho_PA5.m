@@ -55,7 +55,7 @@ disp (Z.')
 %% PROBLEM B: TWO METHODS FOR A LINEAR SYSTEM
 
 % coefficient matrix A and right-hand-side vector b.
-disp ('-------------PROBLEM B-------------')
+disp ('PROBLEM B')
 A = [ 2 -1  3  2;
       1  4 -2  1;
       3  2  1 -1;
@@ -99,6 +99,9 @@ disp (norm(x_inv-x_cramer))
 
 disp('norm(A * x_inv - b):');
 disp(norm(A * x_inv - b));
+
+% RESULTS OF THE CODE:
+
 PROBLEM A
 Matrix R:
      5    -2     0     7
