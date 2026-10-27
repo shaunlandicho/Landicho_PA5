@@ -5,38 +5,38 @@
 
 
 %% PROBLEM A: TRANSPOSE OPERATIONS
-disp ('PROBLEM A')
+('PROBLEM A')
 R = [ 5 -2  0  7;
     1  3 -4  2;
     6  0  8 -1];
 
 % Display matrix R and its transpose forms
-disp ('Matrix R:')
-disp (R)
+('Matrix R:')
+(R)
 
-disp ('transpose (R):')
-disp (transpose(R))
+('transpose (R):')
+(transpose(R))
 
-disp ('R'':')
-disp (R')
+R
+R')
 
-disp ('R.'':')
-disp (R.')
+'R.'':'
+R.'
 
 Z = [ 2+3i  -1+4i   5-2i; -3+1i   6      2+5i];
 
 
-disp ('Matrix Z:')
-disp (Z)
+('Matrix Z:')
+(Z)
 
-disp ('transpose(Z):')
-disp (transpose(Z))
+('transpose(Z):')
+transpose(Z)
 
-disp ('Z'':')
-disp (Z')
+('Z'':')
+Z'
 
-disp ('Z.'':')
-disp (Z.')
+('Z.'':')
+Z.'
 
 % Answer the following in MATLAB comments below your output:
 % a. Which operations give identical results for the real matrix R?
@@ -55,27 +55,27 @@ disp (Z.')
 %% PROBLEM B: TWO METHODS FOR A LINEAR SYSTEM
 
 % coefficient matrix A and right-hand-side vector b.
-disp ('PROBLEM B')
+('PROBLEM B')
 A = [ 2 -1  3  2;
       1  4 -2  1;
       3  2  1 -1;
     -2  3  4  2];
-disp ('Coefficient matrix A:')
-disp (A)
+('Coefficient matrix A:')
+A
 
 b = [16; -7; 6; 7];
-disp ('Right-hand-side vector b:')
-disp (b)
+('Right-hand-side vector b:')
+b
 
 % Determinant A
-disp('Determinant of matrix A, det(A):');
-disp(det(A));
+('Determinant of matrix A, det(A):');
+det(A);
 
-disp ('Two Solution Vectors:')
+('Two Solution Vectors:')
 % Inverse Method
 x_inv = inv(A) * b;
-disp('x_inv:');
-disp(x_inv);
+('x_inv:');
+x_inv;
 
 % Cramer's Rule
 A1 = A; A1(:, 1) = b;
@@ -88,17 +88,17 @@ x_cramer = [det(A1);
             det(A3); 
             det(A4)] / det(A);
 
-disp('x_cramer:');
-disp(x_cramer);
+('x_cramer:');
+x_cramer;
 
 % Numerical precision
-disp ('Numerical precision')
+('Numerical precision')
 
-disp ('norm(x_inv-x_cramer):')
-disp (norm(x_inv-x_cramer))
+('norm(x_inv-x_cramer):')
+norm(x_inv-x_cramer)
 
-disp('norm(A * x_inv - b):');
-disp(norm(A * x_inv - b));
+('norm(A * x_inv - b):');
+norm(A * x_inv - b);
 
 % RESULTS OF THE CODE:
 
